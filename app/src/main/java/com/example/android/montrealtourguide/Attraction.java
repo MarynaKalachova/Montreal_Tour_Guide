@@ -2,11 +2,16 @@ package com.example.android.montrealtourguide;
 
 public class Attraction {
     private String name;
-    private String street;
-    private String city; //Montreal has several small cities on its territory
-    private String postalCode;
-    private String dates;
-    private int ImageResourceID;
+    private String street = NO_STREET;
+    private String city = NO_CITY; //Montreal has several small cities on its territory
+    private String postalCode = NO_POSTAL_CODE;
+    private String dates = NO_DATES;
+    private int ImageResourceID = NO_IMAGE;
+    private static final int NO_IMAGE = -1;
+    private static final String NO_STREET ="No street";
+    private static final String NO_CITY = "No city";
+    private static final String NO_POSTAL_CODE = "No postal code";
+    private static final String NO_DATES = "No dates";
 
     Attraction (String name, String street, String city, String postalCode) {
         this.name = name;
@@ -71,10 +76,23 @@ public class Attraction {
         this.dates = dates;
     }
 
-    @Override
-    public String toString() {
-        return "Name='" + name + '\'' +
-                ", address='" + street + '\'' + city + '\'' + postalCode +
-                '}';
+    public boolean hasImage() {
+        return (ImageResourceID != NO_IMAGE);
+    }
+
+    public boolean hasStreet(){
+        return (!street.equals(NO_STREET));
+    }
+
+    public boolean hasCity(){
+        return(!city.equals(NO_CITY));
+    }
+
+    public boolean hasPostalCode(){
+        return(!postalCode.equals(NO_POSTAL_CODE));
+    }
+
+    public boolean hasDates(){
+        return(!dates.equals(NO_DATES));
     }
 }
