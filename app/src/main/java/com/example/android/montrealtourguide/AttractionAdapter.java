@@ -4,19 +4,20 @@ import android.view.View;
 import android.app.Activity;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+import android.widget.Adapter;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class MuseumAdapter extends ArrayAdapter<Museum> {
+public class AttractionAdapter extends ArrayAdapter<Attraction> {
 
-    private static final String LOG_TAG = MuseumAdapter.class.getSimpleName();
+    private static final String LOG_TAG = AttractionAdapter.class.getSimpleName();
 
-    public MuseumAdapter(Activity context, ArrayList<Museum> museums) {
+    public AttractionAdapter(Activity context, ArrayList<Attraction> attractions) {
 
-        super(context, 0, museums);
+        super(context, 0, attractions);
     }
 
     @Override
@@ -27,22 +28,22 @@ public class MuseumAdapter extends ArrayAdapter<Museum> {
             listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
         }
 
-        Museum currentMuseum = getItem(position);
+        Attraction currentAttraction = getItem(position);
 
         ImageView iconImageView = (ImageView) listItemView.findViewById(R.id.image);
-        iconImageView.setImageResource(currentMuseum.getImageResourceID());
+        iconImageView.setImageResource(currentAttraction.getImageResourceID());
 
         TextView nameTextView = (TextView) listItemView.findViewById(R.id.name);
-        nameTextView.setText(currentMuseum.getName());
+        nameTextView.setText(currentAttraction.getName());
 
         TextView streetTextView = (TextView) listItemView.findViewById(R.id.street);
-        streetTextView.setText(currentMuseum.getStreet());
+        streetTextView.setText(currentAttraction.getStreet());
 
         TextView cityTextView = (TextView) listItemView.findViewById(R.id.city);
-        cityTextView.setText(currentMuseum.getCity());
+        cityTextView.setText(currentAttraction.getCity());
 
         TextView postalCodeTextView = (TextView) listItemView.findViewById(R.id.postalCode);
-        postalCodeTextView.setText(currentMuseum.getPostalCode());
+        postalCodeTextView.setText(currentAttraction.getPostalCode());
 
         return listItemView;
     }

@@ -1,20 +1,20 @@
 package com.example.android.montrealtourguide;
 
-public class Museum {
+public class Attraction {
     private String name;
     private String street;
     private String city; //Montreal has several small cities on its territory
     private String postalCode;
     private int ImageResourceID;
 
-    Museum(String name, String street, String city, String postalCode) {
+    Attraction (String name, String street, String city, String postalCode) {
         this.name = name;
         this.street = street;
         this.city = city;
         this.postalCode = postalCode;
     }
 
-    Museum(String name, String street, String city, String postalCode, int ImageResourceID) {
+    Attraction (String name, String street, String city, String postalCode, int ImageResourceID) {
         this.name = name;
         this.street = street;
         this.city = city;
@@ -59,8 +59,7 @@ public class Museum {
 
     @Override
     public String toString() {
-        return "Museum{" +
-                "name='" + name + '\'' +
+        return "Name='" + name + '\'' +
                 ", address='" + street + '\'' + city + '\'' + postalCode +
                 '}';
     }

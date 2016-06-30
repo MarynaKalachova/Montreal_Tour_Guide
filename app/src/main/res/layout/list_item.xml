@@ -14,22 +14,18 @@
 
     <TextView
         android:id="@+id/name"
-        style="@style/styleName"
-        tools:listitem="@layout/activity_museum"/>
+        style="@style/styleName" />
 
     <TextView
         android:id="@+id/street"
-       style="@style/styleStreet"
-        tools:listitem="@layout/activity_museum"/>
+        style="@style/styleStreet" />
 
     <TextView
         android:id="@+id/city"
-        style="@style/styleCity"
-        tools:listitem="@layout/activity_museum"/>
+        style="@style/styleCity" />
 
     <TextView
         android:id="@+id/postalCode"
-        style="@style/stylePostalCode"
-        tools:listitem="@layout/activity_museum"/>
+        style="@style/stylePostalCode" />
 
 </RelativeLayout>
