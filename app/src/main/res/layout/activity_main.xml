@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MainActivityLayoutVertical"
+    tools:context="com.example.android.montrealtourguide.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_architecture"
+        style="@style/MainActivityLayoutHorizontal">
+
+        <ImageView
+            style="@style/MainActivityImage"
+            android:src="@drawable/architecture" />
+
+        <TextView
+            style="@style/MainActivityText"
+            android:text="@string/architecture_activity" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_museums"
+        style="@style/MainActivityLayoutHorizontal">
+
+        <ImageView
+            style="@style/MainActivityImage"
+            android:src="@drawable/museum" />
+
+        <TextView
+            style="@style/MainActivityText"
+            android:text="@string/museum_activity" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_festivals"
+        style="@style/MainActivityLayoutHorizontal">
+
+        <ImageView
+            style="@style/MainActivityImage"
+            android:src="@drawable/festivals" />
+
+        <TextView
+            style="@style/MainActivityText"
+            android:text="@string/festivals_activity" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_food"
+        style="@style/MainActivityLayoutHorizontal">
+
+        <ImageView
+            style="@style/MainActivityImage"
+            android:src="@drawable/food" />
+
+        <TextView
+            style="@style/MainActivityText"
+            android:text="@string/food_activity" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Montreal Tour Guide</string>
+    <string name="museum_activity">Museums</string>
+    <string name="architecture_activity">Architecture</string>
+    <string name="festivals_activity">Festivals</string>
+    <string name="outdoors_activity">Sports and Outdoors</string>
+    <string name="food_activity">Food</string>
+</resources>
