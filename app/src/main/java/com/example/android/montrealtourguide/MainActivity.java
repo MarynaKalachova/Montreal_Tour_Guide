@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         museum.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick (View view) {
-                Intent museumIntent = new Intent(MainActivity.this, ArchitectureActivity.class );
+                Intent museumIntent = new Intent(MainActivity.this, MuseumActivity.class );
                 startActivity(museumIntent);
             }
         });

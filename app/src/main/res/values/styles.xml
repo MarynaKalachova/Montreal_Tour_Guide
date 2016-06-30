@@ -37,5 +37,45 @@
         <item name="android:layout_gravity">center</item>
     </style>
 
+    <style name="styleName">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_toRightOf">@id/image</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="styleAddress">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="styleStreet" parent="styleAddress">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_below">@id/name</item>
+    </style>
+
+    <style name="styleCity" parent="styleAddress">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_below">@id/street</item>
+    </style>
+
+    <style name="stylePostalCode" parent="styleAddress">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_below">@id/city</item>
+    </style>
+
+    <style name="activityImage">
+        <item name="android:layout_width">50dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
 
 </resources>

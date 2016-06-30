@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_weight="1"
+    android:orientation="vertical"
+    android:paddingLeft="16dp">
+
+    <ImageView
+        android:id="@+id/image"
+        style="@style/activityImage"
+        android:src="@drawable/science_center"/>
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/styleName"
+        tools:listitem="@layout/activity_museum"/>
+
+    <TextView
+        android:id="@+id/street"
+       style="@style/styleStreet"
+        tools:listitem="@layout/activity_museum"/>
+
+    <TextView
+        android:id="@+id/city"
+        style="@style/styleCity"
+        tools:listitem="@layout/activity_museum"/>
+
+    <TextView
+        android:id="@+id/postalCode"
+        style="@style/stylePostalCode"
+        tools:listitem="@layout/activity_museum"/>
+
+</RelativeLayout>
