@@ -1,5 +1,6 @@
 package com.example.android.montrealtourguide;
 
+import android.support.v4.content.ContextCompat;
 import android.view.View;
 import android.app.Activity;
 import android.view.LayoutInflater;
@@ -14,10 +15,11 @@ import java.util.ArrayList;
 public class AttractionAdapter extends ArrayAdapter<Attraction> {
 
     private static final String LOG_TAG = AttractionAdapter.class.getSimpleName();
+    private int colorResourceID;
 
-    public AttractionAdapter(Activity context, ArrayList<Attraction> attractions) {
-
+    public AttractionAdapter(Activity context, ArrayList<Attraction> attractions, int colorResourceID) {
         super(context, 0, attractions);
+        this.colorResourceID = colorResourceID;
     }
 
     @Override
@@ -67,6 +69,10 @@ public class AttractionAdapter extends ArrayAdapter<Attraction> {
             datesTextView.setVisibility(View.VISIBLE);
         }
         else datesTextView.setVisibility(View.GONE);
+
+        View textContainer = listItemView.findViewById(R.id.item_container);
+        int color = ContextCompat.getColor(getContext(), colorResourceID);
+        textContainer.setBackgroundColor(color);
 
         return listItemView;
     }

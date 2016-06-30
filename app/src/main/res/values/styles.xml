@@ -42,14 +42,14 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_toRightOf">@id/image</item>
         <item name="android:textSize">16dp</item>
-        <item name="android:layout_marginTop">10dp</item>
-        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_margin">10dp</item>
     </style>
 
     <style name="styleAddress">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">10dp</item>
         <item name="android:textStyle">italic</item>
     </style>
 
@@ -63,10 +63,12 @@
 
     <style name="stylePostalCode" parent="styleAddress">
         <item name="android:layout_below">@id/city</item>
+        <item name="android:layout_marginBottom">10dp</item>
     </style>
 
     <style name="styleDates" parent="styleAddress">
         <item name="android:layout_below">@id/name</item>
+        <item name="android:layout_marginBottom">10dp</item>
     </style>
 
     <style name="activityImage">

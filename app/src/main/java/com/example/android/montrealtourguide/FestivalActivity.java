@@ -23,7 +23,7 @@ public class FestivalActivity extends AppCompatActivity {
         festivals.add(new Attraction("International Festival of Circus Arts", "July 7-17, 2016"));
         festivals.add(new Attraction("Montreal Electronic Groove","July 21-31, 2016"));
 
-        AttractionAdapter atAdapter = new AttractionAdapter(this, festivals);
+        AttractionAdapter atAdapter = new AttractionAdapter(this, festivals, R.color.colorFestivals);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(atAdapter);
 

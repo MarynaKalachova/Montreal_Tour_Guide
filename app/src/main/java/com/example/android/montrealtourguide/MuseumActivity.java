@@ -24,7 +24,7 @@ public class MuseumActivity extends AppCompatActivity {
         attractions.add(new Attraction("Montreal Biosphère", "160 Chemin Tour-de-l'Isle,", "Île Sainte-Hélène, QC", "H3C 4G8", R.drawable.biosphere));
         attractions.add(new Attraction("Montreal Science Centre", "2 Rue de la Commune Ouest,", "Montreal, QC", "H2X 4B2", R.drawable.science_center));
 
-        AttractionAdapter atAdapter = new AttractionAdapter(this, attractions);
+        AttractionAdapter atAdapter = new AttractionAdapter(this, attractions, R.color.colorMuseums);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(atAdapter);
     }

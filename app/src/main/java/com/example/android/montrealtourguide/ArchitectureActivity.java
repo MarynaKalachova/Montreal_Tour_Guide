@@ -24,7 +24,7 @@ public class ArchitectureActivity extends AppCompatActivity {
         architecture.add(new Attraction("St. Patrick's Basilica", "160 Chemin Tour-de-l'Isle,", "Île Sainte-Hélène, QC", "H3C 4G8"));
         architecture.add(new Attraction("Saint Joseph's Oratory", "2 Rue de la Commune Ouest,", "Montreal, QC", "H2X 4B2"));
 
-        AttractionAdapter atAdapter = new AttractionAdapter(this, architecture);
+        AttractionAdapter atAdapter = new AttractionAdapter(this, architecture, R.color.colorArchitecture);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(atAdapter);
     }

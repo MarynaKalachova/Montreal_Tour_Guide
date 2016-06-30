@@ -20,7 +20,7 @@ public class FoodActivity extends AppCompatActivity {
         restaurants.add(new Attraction("Impasto", "48 Rue Dante", "Montreal, QC", "H2S 1J5"));
         restaurants.add(new Attraction("Damas", "1201 Van Horne", "Montreal, QC", "H2V 1K4"));
 
-        AttractionAdapter atAdapter = new AttractionAdapter(this, restaurants);
+        AttractionAdapter atAdapter = new AttractionAdapter(this, restaurants, R.color.colorFood);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(atAdapter);
     }
