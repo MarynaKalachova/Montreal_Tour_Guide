@@ -28,4 +28,8 @@
         android:id="@+id/postalCode"
         style="@style/stylePostalCode" />
 
+    <TextView
+        android:id="@+id/dates"
+        style="@style/styleDates" />
+
 </RelativeLayout>

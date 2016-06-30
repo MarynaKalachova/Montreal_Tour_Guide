@@ -5,6 +5,7 @@ public class Attraction {
     private String street;
     private String city; //Montreal has several small cities on its territory
     private String postalCode;
+    private String dates;
     private int ImageResourceID;
 
     Attraction (String name, String street, String city, String postalCode) {
@@ -20,6 +21,11 @@ public class Attraction {
         this.city = city;
         this.postalCode = postalCode;
         this.ImageResourceID = ImageResourceID;
+    }
+
+    Attraction (String name, String dates) {
+        this.name = name;
+        this.dates = dates;
     }
 
     String getName(){
@@ -41,6 +47,10 @@ public class Attraction {
         return ImageResourceID;
     }
 
+    public String getDates() {
+        return dates;
+    }
+
     void setName(String name){
         this.name = name;
     }
@@ -55,6 +65,10 @@ public class Attraction {
 
     public void setPostalCode(String postalCode) {
         this.postalCode = postalCode;
+    }
+
+    public void setDates(String dates) {
+        this.dates = dates;
     }
 
     @Override

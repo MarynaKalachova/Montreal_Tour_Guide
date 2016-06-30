@@ -45,6 +45,9 @@ public class AttractionAdapter extends ArrayAdapter<Attraction> {
         TextView postalCodeTextView = (TextView) listItemView.findViewById(R.id.postalCode);
         postalCodeTextView.setText(currentAttraction.getPostalCode());
 
+        TextView datesTextView = (TextView) listItemView.findViewById(R.id.dates);
+        datesTextView.setText(currentAttraction.getDates());
+
         return listItemView;
     }
 }

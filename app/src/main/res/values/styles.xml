@@ -67,6 +67,11 @@
         <item name="android:layout_below">@id/city</item>
     </style>
 
+    <style name="styleDates" parent="styleAddress">
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_below">@id/postalCode</item>
+    </style>
+
     <style name="activityImage">
         <item name="android:layout_width">50dp</item>
         <item name="android:layout_height">50dp</item>
