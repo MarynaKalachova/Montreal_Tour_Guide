@@ -15,10 +15,41 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ArchitectureActivity" android:label="@string/architecture_activity"/>
-        <activity android:name=".MuseumActivity" android:label="@string/museum_activity"></activity>
-        <activity android:name=".FestivalActivity" android:label="@string/festivals_activity"/>
-        <activity android:name=".FoodActivity" android:label="@string/food_activity"></activity>
+        <activity
+            android:name=".ArchitectureActivity"
+            android:label="@string/architecture_activity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".MuseumActivity"
+            android:label="@string/museum_activity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".FestivalActivity"
+            android:label="@string/festivals_activity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+
+        <activity
+            android:name=".FoodActivity"
+            android:label="@string/food_activity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
     </application>
 
 </manifest>
