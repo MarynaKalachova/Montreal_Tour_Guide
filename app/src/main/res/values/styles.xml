@@ -14,10 +14,16 @@
         <item name="android:orientation">vertical</item>
     </style>
 
-    <style name="MainActivityLayoutHorizontal">
+    <style name = "MainActivityFrameLayout">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">0dp</item>
         <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="MainActivityLayoutHorizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+
         <item name="android:orientation">horizontal</item>
     </style>
 
@@ -74,9 +80,7 @@
     <style name="activityImage">
         <item name="android:layout_width">50dp</item>
         <item name="android:layout_height">50dp</item>
-        <item name="android:layout_marginTop">10dp</item>
-        <item name="android:layout_marginBottom">10dp</item>
-        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_margin">10dp</item>
         <item name="android:scaleType">centerCrop</item>
         <item name="android:layout_gravity">center</item>
     </style>

@@ -4,60 +4,81 @@
     style="@style/MainActivityLayoutVertical"
     tools:context="com.example.android.montrealtourguide.MainActivity">
 
-    <LinearLayout
-        android:id="@+id/activity_architecture"
-        android:background="@color/colorArchitecture"
-        style="@style/MainActivityLayoutHorizontal">
+    <FrameLayout
+        style="@style/MainActivityFrameLayout"
+        android:background="@color/colorArchitecture">
 
-        <ImageView
-            style="@style/MainActivityImage"
-            android:src="@drawable/architecture" />
+        <LinearLayout
+            android:id="@+id/activity_architecture"
 
-        <TextView
-            style="@style/MainActivityText"
-            android:text="@string/architecture_activity" />
-    </LinearLayout>
+            style="@style/MainActivityLayoutHorizontal"
+            android:background="?attr/selectableItemBackground">
 
-    <LinearLayout
-        android:id="@+id/activity_museums"
-        android:background="@color/colorMuseums"
-        style="@style/MainActivityLayoutHorizontal">
+            <ImageView
+                style="@style/MainActivityImage"
+                android:src="@drawable/architecture" />
 
-        <ImageView
-            style="@style/MainActivityImage"
-            android:src="@drawable/museum" />
+            <TextView
+                style="@style/MainActivityText"
+                android:text="@string/architecture_activity" />
+        </LinearLayout>
+    </FrameLayout>
 
-        <TextView
-            style="@style/MainActivityText"
-            android:text="@string/museum_activity" />
-    </LinearLayout>
+    <FrameLayout
+        style="@style/MainActivityFrameLayout"
+        android:background="@color/colorMuseums">
 
-    <LinearLayout
-        android:id="@+id/activity_festivals"
-        android:background="@color/colorFestivals"
-        style="@style/MainActivityLayoutHorizontal">
+        <LinearLayout
+            android:id="@+id/activity_museums"
+            style="@style/MainActivityLayoutHorizontal"
+            android:background="?attr/selectableItemBackground">
 
-        <ImageView
-            style="@style/MainActivityImage"
-            android:src="@drawable/festivals" />
+            <ImageView
+                style="@style/MainActivityImage"
+                android:src="@drawable/museum" />
 
-        <TextView
-            style="@style/MainActivityText"
-            android:text="@string/festivals_activity" />
-    </LinearLayout>
+            <TextView
+                style="@style/MainActivityText"
+                android:text="@string/museum_activity" />
+        </LinearLayout>
+    </FrameLayout>
 
-    <LinearLayout
-        android:id="@+id/activity_food"
-        android:background="@color/colorFood"
-        style="@style/MainActivityLayoutHorizontal">
+    <FrameLayout
+        style="@style/MainActivityFrameLayout"
+        android:background="@color/colorFestivals">
 
-        <ImageView
-            style="@style/MainActivityImage"
-            android:src="@drawable/food" />
+        <LinearLayout
+            android:id="@+id/activity_festivals"
+            style="@style/MainActivityLayoutHorizontal"
+            android:background="?attr/selectableItemBackground">
 
-        <TextView
-            style="@style/MainActivityText"
-            android:text="@string/food_activity" />
+            <ImageView
+                style="@style/MainActivityImage"
+                android:src="@drawable/festivals" />
 
-    </LinearLayout>
+            <TextView
+                style="@style/MainActivityText"
+                android:text="@string/festivals_activity" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        style="@style/MainActivityFrameLayout"
+        android:background="@color/colorFood">
+
+        <LinearLayout
+            android:id="@+id/activity_food"
+            style="@style/MainActivityLayoutHorizontal"
+            android:background="?attr/selectableItemBackground">
+
+            <ImageView
+                style="@style/MainActivityImage"
+                android:src="@drawable/food" />
+
+            <TextView
+                style="@style/MainActivityText"
+                android:text="@string/food_activity" />
+
+        </LinearLayout>
+    </FrameLayout>
 </LinearLayout>
