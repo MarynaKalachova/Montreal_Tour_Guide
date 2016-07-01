@@ -26,6 +26,5 @@ public class FestivalActivity extends AppCompatActivity {
         AttractionAdapter atAdapter = new AttractionAdapter(this, festivals, R.color.colorFestivals);
         ListView listView = (ListView) findViewById(R.id.list);
         listView.setAdapter(atAdapter);
-
     }
 }
